@@ -1,0 +1,11 @@
+{
+"mqttbroker" : "tcp://127.0.0.1:1883",
+"dbhost" : "127.0.01",
+"dbport" : "3306",
+"dbuser" : "user",
+"dbdb"   : "database",
+"dbpass" : "password",
+"telegrambottoken" : "telegramtoken after bot:",
+"telegramchatid" : your_chat_id,
+"notifyobject" : [ "car", "person", "truck" ]
+}
