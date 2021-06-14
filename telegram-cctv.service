@@ -1,0 +1,16 @@
+[Unit]
+Description=telegram cctv
+After=network-online.target docker.service
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/path-to/telegram-cctv
+PermissionsStartOnly=true
+ExecStart=/path-to/telegram-cctv/client -d
+TimeoutSec=300
+
+[Install]
+WantedBy=multi-user.target
+

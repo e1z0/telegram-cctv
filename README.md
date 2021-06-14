@@ -8,6 +8,14 @@ This tool runs in daemon mode and listens for the mqtt frigate topic, once the n
 This was written for the older frigate version that haven't abillity to capture video clips. Now it have, but maybe someone find this userful..
 
 
+## Install
+Edit **telegram-cctv.service** to update full path to program
+```
+make
+cp telegram-cctv.service /etc/systemd/system
+systemctl start telegram-cctv
+```
+
 ## Motion configuration
 
 ```
